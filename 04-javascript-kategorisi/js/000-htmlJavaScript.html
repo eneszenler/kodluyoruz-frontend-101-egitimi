@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <style>
+        .text-align {
+            text-align: center;
+        }
+
+        .text-primary {
+            color: blue;
+        }
+
+        .text-danger {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="greeting" style="text-align: center;">Bla Bla</h1>
+
+    <div id="alert"></div>
+    <!--
+        <h2 id="title">AALDMLASSLDMASL</h2>
+        
+        <ul id="list">
+            <li>
+                <a href="#" id="kodluyoruzLink">Link Bilgisi</a>
+            </li>
+        </ul>
+
+        <ul id="list2">
+            <li>Lorem.</li>
+            <li>Harum!</li>
+            <li>Itaque.</li>
+            <li>Eius!</li>
+        </ul>
+        -->
+
+    <p id="info"></p>
+
+    <h2 id="counter" class="text-align"></h2>
+    <div class="d-flex justify-content-center">
+        <button id="increase" class="btn btn-primary me-1">Arttır</button>
+        <button id="decrease" class="btn btn-danger me-1">Azalt</button>
+        <button id="reset" class="btn btn-warning">Sıfırla</button>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <form id="userForm">
+                    <div class="mb-3">
+                        <label class="form-label" for="username">Kullanıcı Adı: </label>
+                        <input type="text" name="username" id="username" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="score">Not Bilgisi: </label>
+                        <input type="number" name="score" id="score" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <button type="reset" class="btn btn-danger">Sıfırla</button>
+                        <button type="submit" class="btn btn-success">Gönder</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <ul class="list-group container" id="userList">
+    </ul>
+
+    <!-- <p id="namePrompt"></p> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+
+    <!-- 
+        <script src="001-hello-world.js">
+        <script src="002-degisken-tanimlama.js"> 
+        <script src="003-degisken-tanimlama-kurallari.js"> </script>
+        <script src="004-number-veri-turu-ile-calismak.js"></script>
+        <script src="005-boolean-veri-turu-ile-calismak.js"></script>
+        <script src="006-veri-turu-ve-veri-turu-donusumleri.js"></script>
+        <script src="007-template-literals-kullanimi.js"></script>
+        <script src="008-string-veri-turu-islemleri.js"></script>
+        <script src="009-document."></script>
+        <script src="010-dom-icerisinden-oge-secimi.js"></script>
+        <script src="011-prompt-ile-kullanicidan-bilgi-almak.js"></script>
+        <script src="012-liste-icindeki-ogeye-ulasmak-veya-yeni-oge-eklemek.js"></script>
+        <script src="013-css-class-eklemek-veya-cikartmak.js"></script>
+        <script src="014-karsilastirma-operatorleri-ve-mantiksal-operatorler.js"></script>
+        <script src="015-kosullarla-calismak.js"></script>
+        <script src="016-coklu-kosullar-ile-calismak.js"></script>
+        <script src="017-ternary-operator-ile-short-if-kullanimi.js"></script>
+        <script src="018.5-odev.js"></script>
+        <script src="019-fonksiyonlar-neden-fonksiyonlara-ihtiyac-duyariz-ve-ilk-fonksiyonumuz.js"></script>
+        <script src="020-fonksiyona-parametre-atamak-ve-geridonus-almak.js"></script>
+        <script src="021-arrow-function-kullanimi.js"></script>
+        <script src="022-dom-etkinlikleriyle-calismak.js"></script>
+        <script src="023-functions-bolum-sonu-egzersizi.js"></script>
+        <script src="024-localStorage-icerisine-veri-eklemek-duzenlemek-ve-silmek.js"></script>
+        <script src="025-localStorage-icerisinde-farkli-turde-bilgilerin-saklanmasi.js"></script>
+        <script src="026-localStorage-bolum-sonu-egzersizi.js"></script>
+        <script src="027-form-submit-yonetimi.js"></script>
+        <script src="028-input-icerisindeki-veriyi-almak.js"></script>
+        <script src="029-formlarla-calismak-bolum-sonu-egzersizi.js"></script>
+        <script src="030-dizi-olusturmak-ve-dizi-icindeki-ilk-son-elemana-ulasmak.js"></script>
+        <script src="031-array-yapisina-oge-eklemek-cikartmak-ve-guncellemek.js"></script>
+        <script src="032-cok-kullanilan-array-dizi-metotlari.js"></script>
+        <script src="033-for-dongusu-kullanimi.js"></script>
+        <script src="034-break-ve-continue-kullanimi.js"></script>
+        <script src="035-while-dongusu-kullanimi.js"></script>
+        <script src="036-array-forEach-kullanimi.js"></script>
+        <script src="037-array-filter-kullanimi.js"></script>
+        <script src="038-array-map-kullanimi.js"></script>
+        <script src="039-object-nedir-nasil-olusturulur.js"></script>
+        <script src="040-object-key-ve-value-yapisinin-kullanimi.js"></script>
+        <script src="041-object-icinde-metot-nasil-ekleriz.js"></script>
+        <script src="042-09-042-object-ve-array-destructuring-nasil-kullanilir.js"></script>
+        <script src="043-hata-yonetimi-icin-try-catch-kullanimi.js"></script>
+        <script src="044-fetch-api-ile-calismak.js"></script>
+    -->
+    <script src="coderByte.js"></script>
+</body>
+
+</html>
