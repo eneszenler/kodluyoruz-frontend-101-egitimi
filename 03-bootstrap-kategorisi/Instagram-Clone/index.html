@@ -8,6 +8,7 @@
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
     <!--load all styles -->
 
     <!-- Bootstrap CSS -->
@@ -17,125 +18,340 @@
     <title>Instagram</title>
 </head>
 
-<body>
+<body class="bg-light">
+    <nav class="container-fluid navbar navbar-expand-lg border border-1 bg-light fixed-top text-center">
+        <div class="row expand">
+            <div class="col-sm-4 brand offset-1">
+                <a href="index.html" class="navbar-brand">
+                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
+                </a>
+            </div>
+            <div class="col-sm-2 d-none d-lg-block text-start">
+                <input class="empty" type="text" placeholder="Ara" style="width: 100%;">
+            </div>
+            <div class="col-sm-3 text-end">
+                <a href="./index.html"><img src="./icons/home.png" style="margin-right: 12px;" alt="home"></a>
+                <a href="#"><img src="./icons/send.png" style="margin-right: 12px;" alt="home"></a>
+                <a href="#"><img src="./icons/add.png" style="margin-right: 12px;" alt="add"></a>
+                <a href="#"><img src="./icons/compass.png" style="margin-right: 12px;" alt="compass"></a>
+                <a href="#"><img src="./icons/like.png" style="margin-right: 12px;" alt="like"></a>
+                <a href="#"><img src="https://picsum.photos/id/51/30" alt="like"
+                        style="width: 30px; height: 30px; border-radius: 50%; margin-right: 12px;"></a>
+            </div>
+        </div>
+
+    </nav>
+
     <main class="container mt-3">
         <div class="row">
-            <section class="col-sm-8 bg-primary">
-                <article class="row">
-                    <header class="row">
-                        <img class="col-sm-2 rounded" src="https://picsum.photos/500" alt="article-1">
-                        <h3 class="col-sm-8">buraakglmz</h3>
-                        <i class="fab fa-github-square"></i> <!-- uses brands style -->
-                    </header>
-                    <div>
-                        <div class="row">
-                            <img class="w-50" src="https://picsum.photos/500" alt="article-2">
+            <section class="col-sm-5 offset-2">
+                <div class="row border bg-white mt-5">
+                    <div class="col-sm-2">
+                        <a href="#"><img class="storyphoto" src="https://picsum.photos/id/24/60" alt="story"></a>
+                        <p class="row storytext">ozberksen</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#"><img class="storyphoto " src="https://picsum.photos/id/51/60" alt="story"></a>
+                        <p class="row storytext ">furkan_sertt</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#"><img class="storyphoto " src="https://picsum.photos/id/52/60" alt="story"></a>
+                        <p class="row storytext ">ekinkollama</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#"><img class="storyphoto " src="https://picsum.photos/id/53/60" alt="story"></a>
+                        <p class="row storytext ">barbarapalvin</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#"><img class="storyphoto " src="https://picsum.photos/id/54/60" alt="story"></a>
+                        <p class="row storytext ">yusufogzz</p>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#"><img class="storyphoto " src="https://picsum.photos/id/55/60" alt="story"></a>
+                        <p class="row storytext ">beratercis</p>
+                    </div>
+                </div>
+
+                <article class="row border bg-white mt-3 ">
+                    <div class="col col-sm-12">
+                        <header class="row border-bottom " style="height: 60px;">
+                            <a href="#" class="col-sm-1 hizala"><img src="https://picsum.photos/id/214/200/200"
+                                    alt="article-1" style="width: 50px; height: 50px; border-radius: 50%;"></a>
+                            <h3 class="col-sm-8 postuserfont hizala" style="margin-left: 10px;">buraakglmz</h3>
+                            <h3 class="col-sm-2 hizala">...</h3>
+                        </header>
+                        <div>
+                            <div class="row">
+                                <img src="https://picsum.photos/id/214/500" alt="article-2" style="max-height: 600px;">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row" style="margin-top: 8px;">
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/like.png"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/chat.png"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/send.png"></a>
+                                </div>
+                                <div class="col-sm-8 bg-white"></div>
+                                <div class="col-sm-1 align-self-end">
+                                    <a href="#"><img src="./icons/bookmark.png"></a>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <a href="#" class="col-sm-1">
+                                    <img src="https://picsum.photos/id/151/200"
+                                        style="width: 30px; height: 30px; border-radius: 50%;">
+                                </a>
+                                <p class="col-sm-11" style="font-size: 15px;"><b>x</b> ve <b>4.715 diğer kişi</b>
+                                    beğendi</p>
+                            </div>
+                            <div class="row">
+                                <p class="postfont">143 yorumun tümünü gör</p>
+                            </div>
+                            <div class="row">
+                                <p class="postfont2">46 DAKİKA ÖNCE</p>
+                            </div>
+                            <div class="row border-top" style="height: 45px;">
+                                <div class="col-sm-1 hizala">
+                                    <a href="#"><img src="./icons/smile.png"></a>
+                                </div>
+                                <div class="col-sm-9 hizala">
+                                    <input type="text" class="inputnone" placeholder="Yorum ekle..." name="comment"
+                                        id="comment">
+                                </div>
+                                <div class="col-sm-2 hizala">
+                                    <a href="#" class="share">Paylaş</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="row">
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-9"></div>
-                        </div>
-                        <div class="row">
-                            <img src="#" alt="">
-                            <p><b>x</b> ve <b>4.715 diğer kişi</b> beğendi</p>
-                        </div>
-                        <div class="row">
-                            <p>143 yorumun tümünü gör</p>
-                        </div>
-                        <div class="row">
-                            <p>46 DAKİKA ÖNCE</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-2"></div>
-                            <div class="col-sm-8">
-                                <input type="text" name="comment" id="comment">
+                </article>
+
+                <article class="row border bg-white mt-3 ">
+                    <div class="col col-sm-12">
+                        <header class="row border-bottom " style="height: 60px;">
+                            <a href="#" class="col-sm-1 hizala"><img src="https://picsum.photos/id/24/200/200"
+                                    alt="article-1" style="width: 50px; height: 50px; border-radius: 50%;"></a>
+                            <h3 class="col-sm-8 postuserfont hizala" style="margin-left: 10px;">ozberksen</h3>
+                            <h3 class="col-sm-2 hizala">...</h3>
+                        </header>
+                        <div>
+                            <div class="row">
+                                <img src="https://picsum.photos/id/247/500" alt="article-2" style="max-height: 600px;">
                             </div>
-                            <div class="col-sm-2">
-                                <a href="#">Paylaş</a>
+                        </div>
+                        <div>
+                            <div class="row" style="margin-top: 8px;">
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/like.png"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/chat.png"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/send.png"></a>
+                                </div>
+                                <div class="col-sm-8 bg-white"></div>
+                                <div class="col-sm-1 align-self-end">
+                                    <a href="#"><img src="./icons/bookmark.png"></a>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <a href="#" class="col-sm-1">
+                                    <img src="https://picsum.photos/id/100/200"
+                                        style="width: 30px; height: 30px; border-radius: 50%;">
+                                </a>
+                                <p class="col-sm-11" style="font-size: 15px;"><b>y</b> ve <b>4.715 diğer kişi</b>
+                                    beğendi</p>
+                            </div>
+                            <div class="row">
+                                <p class="postfont">50 yorumun tümünü gör</p>
+                            </div>
+                            <div class="row">
+                                <p class="postfont2">17 DAKİKA ÖNCE</p>
+                            </div>
+                            <div class="row border-top" style="height: 45px;">
+                                <div class="col-sm-1 hizala">
+                                    <a href="#"><img src="./icons/smile.png"></a>
+                                </div>
+                                <div class="col-sm-9 hizala">
+                                    <input type="text" class="inputnone" placeholder="Yorum ekle..." name="comment"
+                                        id="comment">
+                                </div>
+                                <div class="col-sm-2 hizala">
+                                    <a href="#" class="share">Paylaş</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="row border bg-white mt-3 ">
+                    <div class="col col-sm-12">
+                        <header class="row border-bottom " style="height: 60px;">
+                            <a href="#" class="col-sm-1 hizala"><img src="https://picsum.photos/id/10/200/200"
+                                    alt="article-1" style="width: 50px; height: 50px; border-radius: 50%;"></a>
+                            <h3 class="col-sm-8 postuserfont hizala" style="margin-left: 10px;">kendalljenner</h3>
+                            <h3 class="col-sm-2 hizala">...</h3>
+                        </header>
+                        <div>
+                            <div class="row">
+                                <img src="https://picsum.photos/id/14/500" alt="article-2" style="max-height: 600px;">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row" style="margin-top: 8px;">
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/like.png"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/chat.png"></a>
+                                </div>
+                                <div class="col-sm-1">
+                                    <a href="#"><img src="./icons/send.png"></a>
+                                </div>
+                                <div class="col-sm-8 bg-white"></div>
+                                <div class="col-sm-1 align-self-end">
+                                    <a href="#"><img src="./icons/bookmark.png"></a>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <a href="#" class="col-sm-1">
+                                    <img src="https://picsum.photos/id/23/200"
+                                        style="width: 30px; height: 30px; border-radius: 50%;">
+                                </a>
+                                <p class="col-sm-11" style="font-size: 15px;"><b>z</b> ve <b>245.715 diğer kişi</b>
+                                    beğendi</p>
+                            </div>
+                            <div class="row">
+                                <p class="postfont">21.142 yorumun tümünü gör</p>
+                            </div>
+                            <div class="row">
+                                <p class="postfont2">57 DAKİKA ÖNCE</p>
+                            </div>
+                            <div class="row border-top" style="height: 45px;">
+                                <div class="col-sm-1 hizala">
+                                    <a href="#"><img src="./icons/smile.png"></a>
+                                </div>
+                                <div class="col-sm-9 hizala">
+                                    <input type="text" class="inputnone" placeholder="Yorum ekle..." name="comment"
+                                        id="comment">
+                                </div>
+                                <div class="col-sm-2 hizala">
+                                    <a href="#" class="share">Paylaş</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </article>
             </section>
 
-            <aside class="col-sm-4 bg-warning">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <img src="https://picsum.photos/60" alt="aside-1">
-                    </div>
-                    <div class="col-sm-7">
-                        <p class="row"><b>eneszenler</b></p>
-                        <p class="row">Yusuf Enes Zenler</p>
-                    </div>
+            <aside class="col-sm-4 d-none d-lg-block mt-5 ">
+                <div class="row mt-5">
                     <div class="col-sm-3">
-                        <p>Geçiş Yap</p>
+                        <img src="https://picsum.photos/id/51/60" alt="aside-1"
+                            style="width:65px; heigth: 65px; border-radius:50%;">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row align-items-end">
+                            <a href="#" class="share2">eneszenler</a>
+                        </div>
+                        <div class="row align-items-start">Yusuf Enes Zenler</div>
+                    </div>
+                    <div class="col-sm-3 hizala">
+                        <a href="#" class="share">
+                            <p>Geçiş Yap</p>
+                        </a>
                     </div>
                 </div>
                 <div>
-                    <div class="row">
-                        <div class="col sm 6">
-                            <p>Senin İçin Öneriler</p>
+                    <div class="row mt-4">
+                        <div class="col-sm-5 ">
+                            <p class="hizala">Senin İçin Öneriler</p>
                         </div>
-                        <div class="col sm 6">
-                            <p>Tümünü Gör</p>
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#" class="share2 hizala">
+                                <p>Tümünü Gör</p>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-2">
                     <div class="col-sm-2">
-                        <img src="https://picsum.photos/40" alt="aside-2">
+                        <a href="#"><img src="https://picsum.photos/id/5/40" alt="aside-2"
+                                style="width: 50px; height: 50px; border-radius: 50%;"></a>
                     </div>
                     <div class="col-sm-7">
-                        <p class="row"><b>berkerbozkurtt</b></p>
-                        <p class="row">ozberksen + 13 diğer kişi ta...</p>
+                        <p class="row"><a href="#" class="share2">berkerbozkurtt</a>
+                        </p>
                     </div>
                     <div class="col-sm-3">
-                        <p>Takip Et</p>
+                        <a href="#" class="share">
+                            <p>Takip Et</p>
+                        </a>
                     </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-2">
+                        <a href="#"><img src="https://picsum.photos/id/87/40" alt="aside-2"
+                                style="width: 50px; height: 50px; border-radius: 50%;"></a>
+                    </div>
+                    <div class="col-sm-7">
+                        <p class="row"><a href="#" class="share2">recepzenler</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="share">
+                            <p>Takip Et</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-2">
+                        <a href="#"><img src="https://picsum.photos/id/213/40" alt="aside-2"
+                                style="width: 50px; height: 50px; border-radius: 50%;"></a>
+                    </div>
+                    <div class="col-sm-7">
+                        <p class="row"><a href="#" class="share2">iremilaydaozmis</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="share">
+                            <p>Takip Et</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-sm-2">
+                        <a href="#"><img src="https://picsum.photos/id/234/40" alt="aside-2"
+                                style="width: 50px; height: 50px; border-radius: 50%;"></a>
+                    </div>
+                    <div class="col-sm-7">
+                        <p class="row"><a href="#" class="share2">cznburak</a></p>
 
-                    <div class="col-sm-2">
-                        <img src="https://picsum.photos/40" alt="aside-2">
-                    </div>
-                    <div class="col-sm-7">
-                        <p class="row"><b>berkerbozkurtt</b></p>
-                        <p class="row">ozberksen + 13 diğer kişi ta...</p>
                     </div>
                     <div class="col-sm-3">
-                        <p>Takip Et</p>
+                        <a href="#" class="share">
+                            <p>Takip Et</p>
+                        </a>
                     </div>
+                </div>
+                <div class="row mt-2">
                     <div class="col-sm-2">
-                        <img src="https://picsum.photos/40" alt="aside-2">
+                        <a href="#"><img src="https://picsum.photos/id/321/40" alt="aside-2"
+                                style="width: 50px; height: 50px; border-radius: 50%;"></a>
                     </div>
                     <div class="col-sm-7">
-                        <p class="row"><b>berkerbozkurtt</b></p>
-                        <p class="row">ozberksen + 13 diğer kişi ta...</p>
+                        <p class="row"><a href="#" class="share2">lebronjames</a></p>
                     </div>
                     <div class="col-sm-3">
-                        <p>Takip Et</p>
-                    </div>
-                    <div class="col-sm-2">
-                        <img src="https://picsum.photos/40" alt="aside-2">
-                    </div>
-                    <div class="col-sm-7">
-                        <p class="row"><b>berkerbozkurtt</b></p>
-                        <p class="row">ozberksen + 13 diğer kişi ta...</p>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>Takip Et</p>
-                    </div>
-                    <div class="col-sm-2">
-                        <img src="https://picsum.photos/40" alt="aside-2">
-                    </div>
-                    <div class="col-sm-7">
-                        <p class="row"><b>berkerbozkurtt</b></p>
-                        <p class="row">ozberksen + 13 diğer kişi ta...</p>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>Takip Et</p>
+                        <a href="#" class="share">
+                            <p>Takip Et</p>
+                        </a>
                     </div>
                 </div>
             </aside>
